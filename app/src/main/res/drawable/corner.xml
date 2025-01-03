@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp"/> <!-- شعاع گردی برای گوشه‌ها -->
+            <solid android:color="@color/white"/> <!-- رنگ پس زمینه -->
+        </shape>
+    </item>
+    <!-- وضعیت فشار داده شده -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp"/> <!-- شعاع گردی برای گوشه‌ها -->
+            <solid android:color="@color/white"/> <!-- رنگ پس زمینه -->
+        </shape>
+    </item>
+    <!-- وضعیت عادی -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp"/> <!-- شعاع گردی برای گوشه‌ها -->
+            <solid android:color="@color/white"/> <!-- رنگ پس زمینه -->
+        </shape>
+    </item>
+</selector>

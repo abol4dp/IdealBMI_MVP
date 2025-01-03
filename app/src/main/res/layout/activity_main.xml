@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".ui.MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="360dp"
+        android:layout_height="650dp"
+        android:layout_gravity="center"
+        android:background="@drawable/corner"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493">
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editText_ghad"
+            android:layout_width="290dp"
+            android:layout_height="48dp"
+            android:background="@drawable/custom_textview"
+            android:elevation="10sp"
+            android:fontFamily="@font/yekan"
+            android:hint="@string/r"
+            android:inputType="number"
+            android:padding="11sp"
+            android:textColorHint="@color/blackk2"
+            android:textSize="20sp"
+
+
+            app:layout_constraintBottom_toTopOf="@+id/editText_vazn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.525"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.787" />
+
+        <Button
+
+            android:id="@+id/calculation"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="36dp"
+            android:backgroundTint="@color/green"
+            android:elevation="20dp"
+            android:fontFamily="@font/yekanmm"
+            android:text="محاسبه"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_vazn" />
+
+        <ImageView
+            android:id="@+id/thrash_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:contentDescription="TODO"
+            app:layout_constraintBottom_toBottomOf="@+id/calculation"
+            app:layout_constraintEnd_toStartOf="@+id/calculation"
+            app:layout_constraintHorizontal_bias="0.84"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/calculation"
+            app:srcCompat="@mipmap/ic_thrash_bin"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/txtresult"
+            android:layout_width="167dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/yekan"
+            android:gravity="center"
+            android:hint="25"
+            android:text="TextView"
+            android:textSize="70sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calculation" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editText_vazn"
+            android:layout_width="290dp"
+            android:layout_height="48dp"
+            android:background="@drawable/custom_textview"
+            android:elevation="10dp"
+            android:fontFamily="@font/yekan"
+            android:hint="وزن  "
+            android:inputType="number"
+            android:padding="11sp"
+            android:textColorHint="@color/blackk2"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.525"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.273" />
+
+
+        <TextView
+            android:id="@+id/textifbody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/yekan"
+            android:text=""
+            android:textColor="@color/blackk2"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtresult" />
+
+        <TextView
+            android:id="@+id/bmirange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/yekan"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textifbody"
+            app:layout_constraintVertical_bias="0.369" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="285dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/blackk2"
+            android:fontFamily="@font/yekan"
+            android:gravity="center"
+            android:text="قد و وزن خود را وارد کنید"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
