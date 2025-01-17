@@ -9,8 +9,8 @@ import android.widget.Toast
 import com.example_app.bmi_mvp_kh.databinding.ActivityMainBinding
 
 class ViewMainActivity(
-    contextInstance: Context
-) : FrameLayout(contextInstance) {
+   private  val context: Context
+)  {
 
     val binding =
         ActivityMainBinding.inflate(LayoutInflater.from(context)) //Connection to the main activity
